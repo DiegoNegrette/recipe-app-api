@@ -5,11 +5,12 @@ name = "pypi"
 
 [packages]
 djangorestframework = ">=3.13.0,<3.14.0"
-Django = ">=3.2,<4.0"
-flake8 = "*"
+Django = "<4.0,>=3.2"
+psycopg2 = ">=2.7.5,<2.8.0"
 
 [dev-packages]
 pytest-django = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.7.12"
