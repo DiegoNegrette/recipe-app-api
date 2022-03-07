@@ -8,8 +8,10 @@ ENV PYTHONUNBUFFERED 1
 
 COPY ./Pipfile /Pipfile
 COPY ./Pipfile.lock /Pipfile.lock
+COPY ./pytest.ini /pytest.ini
 RUN pip install pipenv
-RUN pipenv install --system --deploy --ignore-pipfile
+#RUN pipenv install --system --deploy --ignore-pipfile
+RUN pipenv install --system --dev
 
 RUN mkdir /app
 WORKDIR /app

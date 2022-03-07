@@ -6,8 +6,10 @@ name = "pypi"
 [packages]
 djangorestframework = ">=3.13.0,<3.14.0"
 Django = ">=3.2,<4.0"
+flake8 = "*"
 
 [dev-packages]
+pytest-django = "*"
 
 [requires]
 python_version = "3.7.12"
