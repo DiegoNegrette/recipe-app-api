@@ -9,6 +9,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         self.stdout.write('Waiting for database...')
+        time.sleep(5)
         db_conn = None
         while not db_conn:
             try:
